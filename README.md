@@ -6,12 +6,26 @@ CustomTab manifest cannot be installed via admin center.
 
 ### Steps to reproduce
 
-1. Go to Microsoft 365 admin center. 
-https://learn.microsoft.com/en-us/microsoft-365/admin/manage/office-addins?view=o365-worldwide
-2. Install manifest_customTab.xml
+1. Go to Microsoft 365 admin center.
+2. Deploy manifest_customTab.xml
 
 Expected result:
-Addin icon appears in Apps group when user create or read message
+Manifest deployed successfully.
 
 Actual result:
 Deploy failed.
+
+### More info: 
+
+How to deploy:
+https://learn.microsoft.com/en-us/microsoft-365/admin/manage/office-addins?view=o365-worldwide
+
+office-addin-manifest says that manifest_customTab.xml is valid
+
+If deploy manifest.xml everything works fine.
+
+### Screenshots
+
+![](scr1.png)
+
+![](scr2.png)
