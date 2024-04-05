@@ -47,7 +47,7 @@
                 <DesktopFormFactor>
                     <FunctionFile resid="indexHtmlUrl" />
                     <ExtensionPoint xsi:type="MessageReadCommandSurface">
-                        <OfficeTab id="TabDefault">
+                        <CustomTab id="Addin.CustomTab">
                             <Group id="msgReadGroup">
                                 <Label resid="GroupLabel"/>
                                 <Control xsi:type="Button" id="msgReadOpenPaneButton">
@@ -67,10 +67,11 @@
                                     </Action>
                                 </Control>
                             </Group>
-                        </OfficeTab>
+                            <Label resid="customTabLabel" />
+                        </CustomTab>
                     </ExtensionPoint>
                     <ExtensionPoint xsi:type="MessageComposeCommandSurface">
-                        <OfficeTab id="TabDefault">
+                        <CustomTab id="Addin.CustomTab">
                             <Group id="msgComposeGroup">
                                 <Label resid="GroupLabel"/>
                                 <Control xsi:type="Button" id="msgComposeOpenPaneButton">
@@ -89,7 +90,8 @@
                                     </Action>
                                 </Control>
                             </Group>
-                        </OfficeTab>
+                            <Label resid="customTabLabel" />
+                        </CustomTab>
                     </ExtensionPoint>
                 </DesktopFormFactor>
             </Host>
@@ -106,6 +108,7 @@
             <bt:ShortStrings>
                 <bt:String id="GroupLabel" DefaultValue="Outlook Add-in"/>
                 <bt:String id="TaskpaneButton.Label" DefaultValue="Show Taskpane"/>
+                <bt:String id="customTabLabel" DefaultValue="Outlook Add-in"/>
             </bt:ShortStrings>
             <bt:LongStrings>
                 <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Opens a pane displaying all available properties."/>
