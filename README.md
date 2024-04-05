@@ -1,32 +1,17 @@
-# OutlookAddin_ItemSend_SmartAlerts
+# OutlookAddin_CustomTab
 
 ### Description
 
-SmartAlerts manifest doesn't work in Mac New Outlook.
-
-### Hardware & Software
-
-MacBook Air M1 2020
-OS: macOs 14.2.1
-
-Outlook: 
-Microsoft® Outlook for Mac
-Version 16.83.1 (24031813)
-
+CustomTab manifest cannot be installed via admin center.
 
 ### Steps to reproduce
 
-1. Open Mac New Outlook app.
-2. Go to "Get Add-ins" -> "My Add-ins"
-3. Install "manifest_smartAlerts.xml" from file.
-4. Close window.
-5. Select any message in inbox.
-6. Try to find addin icon on toolbar.
-7. Start composing new message.
-8. Try to find addin icon on toolbar in composing mode.
-9. Send message to any address.
+1. Go to Microsoft 365 admin center. 
+https://learn.microsoft.com/en-us/microsoft-365/admin/manage/office-addins?view=o365-worldwide
+2. Install manifest_customTab.xml
 
 Expected result:
-1. On step 6, addin icon should be present on toolbar.
-2. On step 8, addin icon should be present on toolbar.
-3. On step 9, addin should block message.
+Addin icon appears in Apps group when user create or read message
+
+Actual result:
+Deploy failed.
